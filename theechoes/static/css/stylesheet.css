@@ -13,41 +13,34 @@
 	display: table-cell;
 }
 
-.navbar-default {
+.navbar {
 	background-color:black;
 	background-image:none;
 	border:none;
 	border-radius:0px;
 }
 
-.navbar-default .navbar-text {
-	color:white;
-}
-
-.navbar-default .navbar-nav > li > a {
+.navbar .navbar-nav > li > a {
 	color: white;
 	text-shadow:none;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar .navbar-nav > li > a {
 	    color: white;
     }
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-	        color: #00ff00;
-	}
-	.navbar-default .navbar-nav > .active > a, 
-	.navbar-default .navbar-nav > .active > a:hover, 
-	.navbar-default .navbar-nav > .active > a:focus {
-		    color: #555;
-		        background-color: #00ff00;
-		}
-		.navbar-default .navbar-nav > .open > a, 
-		.navbar-default .navbar-nav > .open > a:hover, 
-		.navbar-default .navbar-nav > .open > a:focus {
-			    color: #555;
-			        background-color: #00ff00;
-			}
-
-.navbar-default .navbar-nav > .active {
-	background-color:#00ff00;
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+        color: #00ff00;
+	background-color:black;
+}
+.navbar .navbar-nav > .active > a, 
+.navbar .navbar-nav > .active > a:hover, 
+.navbar .navbar-nav > .active > a:focus {
+	color: black;
+	background-color: #00ff00;
+}
+.navbar .navbar-nav > .open > a, 
+.navbar .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+	color: black;
+	background-color: #00ff00;
 }
