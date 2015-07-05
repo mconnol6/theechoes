@@ -7,17 +7,41 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
+	<!-- my CSS -->
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static "css/stylesheet.css" %}" />
+
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+	<title>{% block title %}the echoes{% endblock %}</title>
+
 </head>
 
 <body>
 
-	Hello there
+	{% block header %} 
+	
+	<div class="header">
+
+		<div class="header-title">the echoes</div>
+
+	</div>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</div>
+	</div>
+
+	{% endblock %}
+
+	{% block content %} {% endblock %}
 
 </body>
 

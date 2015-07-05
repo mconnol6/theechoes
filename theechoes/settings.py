@@ -56,7 +56,7 @@ ROOT_URLCONF = 'theechoes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['theechoes/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,7 +113,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
