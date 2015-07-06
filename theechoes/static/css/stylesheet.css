@@ -42,3 +42,14 @@
 	color: black;
 	background-color: #00ff00;
 }
+
+.glyphicon {
+	color:white;
+}
+
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
+	color: #00ff00;
+	text-shadow:none;
+}
