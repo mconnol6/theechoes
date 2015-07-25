@@ -24,14 +24,14 @@
 	bottom:0px;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 772px) {
 	.header-text-container {
 		height:20em;
 		position:relative;
 	}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 773px) {
 	.header-text-container {
 		height:6em;
 		position:relative;
