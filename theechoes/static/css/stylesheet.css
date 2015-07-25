@@ -14,9 +14,7 @@
 }
 
 .header {
-	height:20em;
 	background-color:black;
-	position:relative;
 }
 
 .header-text {
@@ -26,8 +24,23 @@
 	bottom:0px;
 }
 
+@media screen and (min-width: 300px) {
+	.header-text-container {
+		height:20em;
+		position:relative;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.header-text-container {
+		height:6em;
+		position:relative;
+	}
+}
+
 #animated-bars {
 	height:20em;
+	width:100%;
 }
 
 .well {
