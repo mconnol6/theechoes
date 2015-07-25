@@ -28,32 +28,40 @@
 <body>
 
 	{% block header %} 
+
+	<div class="row">
+		<div class="header col-xs-4">
+				<div class="header-text">the echoes</div>
+		</div>
 	
-	<div class="header">
-
-		<div class="header-title">the echoes</div>
+		<div class="header col-xs-8">
+			<img id="animated-bars" src="{% static "images/animated-bars.gif" %}"/>
+		</div>
 
 	</div>
-	<nav class="navbar">
-		<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="glyphicon glyphicon-align-justify"></span>
-					</button>
-					<a class="navbar-brand" href="/">Home</a>
-				</div> <!-- navbar-header-->
-				<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-				<li><a href="performances">Performances</a></li>
-			</ul>
-	</div>
-</div>
-</nav>
+		<nav class="navbar">
+			<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="glyphicon glyphicon-align-justify"></span>
+						</button>
+						<a class="navbar-brand" href="/">Home</a>
+					</div> <!-- navbar-header-->
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="performances">Performances</a></li>
+						</ul>
+					</div>
+			</div>
+		</nav>
 
 	{% endblock %}
 
-	{% block content %} {% endblock %}
+	<div class="container">
 
+		{% block content %} {% endblock %}
+
+	</div>
 </body>
 
 </html>

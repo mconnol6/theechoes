@@ -1,3 +1,13 @@
 {% extends 'theechoes/base.html' %}
 
-{% block content %} [Performances here] {% endblock %}
+{% block content %}
+
+<div class=well>
+	{% for performance in performances %}
+		<li>{{performance.title}}</li>
+	{% endfor %}
+</div>
+
+
+
+{% endblock %}
