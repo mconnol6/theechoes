@@ -13,6 +13,8 @@
 	margin-right:-4px;
 }
 
+/* header stuff */
+
 .header {
 	background-color:black;
 }
@@ -24,14 +26,14 @@
 	bottom:0px;
 }
 
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 990px) {
 	.header-text-container {
 		height:20em;
 		position:relative;
 	}
 }
 
-@media screen and (max-width: 773px) {
+@media screen and (max-width: 990px) {
 	.header-text-container {
 		height:6em;
 		position:relative;
@@ -43,15 +45,12 @@
 	width:100%;
 }
 
-.well {
-	background: #ccffcc;
-}
-
 .navbar {
 	background-color:black;
 	background-image:none;
 	border:none;
 	border-radius:0px;
+	font-size:1.25em;
 }
 
 .navbar .navbar-nav > li > a {
@@ -82,4 +81,16 @@
 .navbar-brand:hover {
 	color: #00ff00;
 	text-shadow:none;
+	font-size:1.25em;
+}
+
+/* performance page */
+
+.well {
+	background: #d1ffd1;
+	padding-top: 0px;
+}
+
+.performance-title {
+	color:#009900;
 }

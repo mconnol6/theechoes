@@ -1,12 +1,32 @@
 {% extends 'theechoes/base.html' %}
+{% load getattribute %}
+
+{% block content-header %}
+Upcoming Performances
+{% endblock %}
 
 {% block content %}
 
-<div class=well>
 	{% for performance in performances %}
-		<li>{{performance.title}}</li>
+
+	<div class="well row">
+
+		<h3 class="performance-title">{{ performance }}</h5>
+
+		{% for field in fields %}
+			{% if field.verbose_name != 'ID' %}
+				<div class="col-xs-2">
+					<strong>{{ field.verbose_name }}</strong>
+				</div>
+
+				<div class="col-xs-10">
+					{{ performance|getattribute:field }}
+				</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+
 	{% endfor %}
-</div>
 
 
 
